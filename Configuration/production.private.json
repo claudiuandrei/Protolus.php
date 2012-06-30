@@ -7,8 +7,8 @@
         "database" : "appdata",
         "host" : "localhost",
         "user" : "root",
-        "password" : "",
-        "mode":"mysql",
+        "password" : "P0Ken",
+        "mode": "mysql",
         "session":"true",
         "session_hook":"php"
     }

@@ -1,0 +1,174 @@
+// import Protolus less base macro environment
+@import "../less-base/include-base";
+// reset browser styling
+@import "../less-base/reset";
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+.wrapper {
+	margin: auto;
+	width: 1200px;
+}
+
+.toggle {
+	text-align: center;
+	font-size: 1.2em;
+	background: lighten(#000, 5%);
+	color: #fff;
+	font-weight: 700;
+	line-height: 20px;
+	
+	span {
+		display: inline-block;
+		padding: 10px;
+	}
+}
+
+.chart {
+	float: left;
+	width: 600px;
+	line-height: 30px;
+	padding: 0;
+	margin: 0;
+	
+	li {
+		font-weight: 700;
+		
+		.value {
+			padding: 0 20px;
+			display: inline-block;
+			font-size: 1.6em;
+		}
+		 
+		.title {
+			text-transform: lowercase;
+			border-top: 5px solid darken(#fff, 5%);
+			padding: 5px 20px 0;
+			font-size: 1.2em;
+			line-height: 20px;
+			color: @green;
+			font-weight: 400;
+		}
+		
+		&.total {
+			height: 100px;
+			
+			.value {
+				font-size: 2em;
+			}
+			
+			.title {
+				padding: 20px 20px 0;
+				text-transform: uppercase;
+				font-size: 1.6em;
+				color: @gray;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.revenues {
+	text-align: right;
+	
+	li {
+		border-left: 10px solid @blue;
+		
+		&.total .title {
+			border-top: 10px solid @blue;
+		}
+	}
+	
+	.value {
+		color: @blue;
+		float: left;
+		clear: left;
+	}
+	
+	.title {
+		float: left;
+	}
+	
+	.division {
+		&.d1 { border-color: darken(@blue, 5%)}
+		&.d2 { border-color: darken(@blue, 10%)}
+		&.d3 { border-color: darken(@blue, 15%)}
+		&.d4 { border-color: darken(@blue, 20%)}
+		&.d5 { border-color: darken(@blue, 25%)}
+		&.d6 { border-color: darken(@blue, 30%)}
+		&.d7 { border-color: darken(@blue, 35%)}
+		&.d8 { border-color: darken(@blue, 40%)}
+		&.d9 { border-color: darken(@blue, 45%)}
+		&.d10 { border-color: darken(@blue, 50%)}
+	}
+}
+
+.expenses {
+	text-align: left;
+	
+	li {
+		border-right: 10px solid @pink;
+		
+		&.total .title {
+			border-top: 10px solid @pink;
+		}
+	}
+	
+	.value {
+		float: right;
+		clear: right;
+		color: @pink;
+	}
+	
+	.title {
+		float: right;
+	}
+	
+	.division {
+		&.d1 { border-color: darken(@pink, 5%)}
+		&.d2 { border-color: darken(@pink, 10%)}
+		&.d3 { border-color: darken(@pink, 15%)}
+		&.d4 { border-color: darken(@pink, 20%)}
+		&.d5 { border-color: darken(@pink, 25%)}
+		&.d6 { border-color: darken(@pink, 30%)}
+		&.d7 { border-color: darken(@pink, 35%)}
+		&.d8 { border-color: darken(@pink, 40%)}
+		&.d9 { border-color: darken(@pink, 45%)}
+		&.d10 { border-color: darken(@pink, 50%)}
+
+	}
+}
+
+.difference {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em;
+	padding: 20px;
+	clear: both;
+	
+	&.profit {
+		color: @blue;
+	}
+	
+	&.loss {
+		color: @pink;
+	}
+}
+
+.year {
+	text-align: center;
+	font-weight: 700;
+	font-size: 4em;
+	padding: 10px 20px;
+	clear: both;
+	color: @green;
+}
+
+@green: #87c80a;
+@gray: #7e8082;
+@pink: #d40072;
+@yellow: #f4aa00;
+@blue: #2c8bce;

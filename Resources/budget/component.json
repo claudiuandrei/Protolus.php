@@ -1,0 +1,10 @@
+{
+    "resource" :{
+        "main_css" : "main.css",
+        "main_js" : "main.js"
+    },
+    "dependency":[
+        "mootools_core",
+        "mootools_more"
+    ]
+}

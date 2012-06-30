@@ -1,0 +1,296 @@
+/* RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* /RESET */body {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.wrapper {
+  margin: auto;
+  width: 1200px;
+}
+.toggle {
+  text-align: center;
+  font-size: 1.2em;
+  background: #0d0d0d;
+  color: #fff;
+  font-weight: 700;
+  line-height: 20px;
+}
+.toggle span {
+  display: inline-block;
+  padding: 10px;
+}
+.chart {
+  float: left;
+  width: 600px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.chart li {
+  font-weight: 700;
+}
+.chart li .value {
+  padding: 0 20px;
+  display: inline-block;
+  font-size: 1.6em;
+}
+.chart li .title {
+  text-transform: lowercase;
+  border-top: 5px solid #f2f2f2;
+  padding: 5px 20px 0;
+  font-size: 1.2em;
+  line-height: 20px;
+  color: #87c80a;
+  font-weight: 400;
+}
+.chart li.total {
+  height: 100px;
+}
+.chart li.total .value {
+  font-size: 2em;
+}
+.chart li.total .title {
+  padding: 20px 20px 0;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  color: #7e8082;
+  font-weight: 700;
+}
+.revenues {
+  text-align: right;
+}
+.revenues li {
+  border-left: 10px solid #2c8bce;
+}
+.revenues li.total .title {
+  border-top: 10px solid #2c8bce;
+}
+.revenues .value {
+  color: #2c8bce;
+  float: left;
+  clear: left;
+}
+.revenues .title {
+  float: left;
+}
+.revenues .division.d1 {
+  border-color: #287db9;
+}
+.revenues .division.d2 {
+  border-color: #236fa4;
+}
+.revenues .division.d3 {
+  border-color: #1f608f;
+}
+.revenues .division.d4 {
+  border-color: #1a527a;
+}
+.revenues .division.d5 {
+  border-color: #164465;
+}
+.revenues .division.d6 {
+  border-color: #113650;
+}
+.revenues .division.d7 {
+  border-color: #0d283b;
+}
+.revenues .division.d8 {
+  border-color: #081a26;
+}
+.revenues .division.d9 {
+  border-color: #040b11;
+}
+.revenues .division.d10 {
+  border-color: #000000;
+}
+.expenses {
+  text-align: left;
+}
+.expenses li {
+  border-right: 10px solid #d40072;
+}
+.expenses li.total .title {
+  border-top: 10px solid #d40072;
+}
+.expenses .value {
+  float: right;
+  clear: right;
+  color: #d40072;
+}
+.expenses .title {
+  float: right;
+}
+.expenses .division.d1 {
+  border-color: #bb0064;
+}
+.expenses .division.d2 {
+  border-color: #a10057;
+}
+.expenses .division.d3 {
+  border-color: #880049;
+}
+.expenses .division.d4 {
+  border-color: #6e003b;
+}
+.expenses .division.d5 {
+  border-color: #55002d;
+}
+.expenses .division.d6 {
+  border-color: #3b0020;
+}
+.expenses .division.d7 {
+  border-color: #220012;
+}
+.expenses .division.d8 {
+  border-color: #080004;
+}
+.expenses .division.d9 {
+  border-color: #000000;
+}
+.expenses .division.d10 {
+  border-color: #000000;
+}
+.difference {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  padding: 20px;
+  clear: both;
+}
+.difference.profit {
+  color: #2c8bce;
+}
+.difference.loss {
+  color: #d40072;
+}
+.year {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4em;
+  padding: 10px 20px;
+  clear: both;
+  color: #87c80a;
+}
