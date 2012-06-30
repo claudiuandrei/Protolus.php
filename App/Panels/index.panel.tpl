@@ -1,4 +1,4 @@
-{page title="Year 2010" meta_description="Testing, I'm a bit lost now"}
+{page title="Budget" meta_description="Testing"}
 {require name="budget"}
 <div class="toggle">
 {foreach from=$data key=year item=budget}
